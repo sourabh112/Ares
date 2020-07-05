@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="img/ARES_LOGO - Copy.png">
+<title>Ares Robotics</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<link href='tach.css' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.chel{
+  width: 200px;
+}
+li{
+  padding: 5px;
+}
+ul{
+  width: 100%;
+  text-align:right;
+}
+body {font-family: 'Montserrat', Georgia, Serif; color: white;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+@media only screen and (max-width: 1065px) {
+  .links{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1065px) {
+  .nav{
+    display: none;
+    }
+  .check{
+    display: none;
+  }
+  .close{
+    display: none;
+    }}
+</style>
+<body style="margin: 0em;padding: 0em; background-image: url('img/8320.png');background-attachment: fixed;">
+<div style="position: fixed; width: 100%;">
+<div style="display: flex; background-color: black; width: 100%;">
+<ul type="none" style="text-align:left;padding:0px;margin: 0em">
+  <li style="display: inline-block;padding:0px;padding-left:0.5vw; "><img src="img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
+</ul>
+  <ul type="none" class="links" style="margin-top: 1vw;padding-right:0.5em;">
+  <li style="display: inline-block; "><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">About Us</a></li>
+  <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Rovers</a></li>
+  <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Sponsers</a></li>
+  <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Achievments</a></li>
+  <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Contact Us</a></li>
+</ul>
+ <ul type="none" class="nav" style="margin: 1vw;padding-right:0.5em;" onclick="nav_open()">
+  <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="img/nav_logo.png" width="40vw" height="40vw"></a></li>
+</ul>
+</div>
+<div class="check">
+  <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; align-self: flex-end; background-color: rgb(0,0,0,0.5);">
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">About Us</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Rovers</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Sponsers</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Achievments</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+<div style=" width: 100%;">
+  <div style="display: flex; background-color: black; width: 100%;">
+    <ul type="none" style="text-align:left;padding:0px;margin: 0em">
+      <li style="display: inline-block;padding:0px;padding-left:0.5vw; "><img src="img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
+    </ul>
+    <ul type="none" class="links" style="margin-top: 1vw;padding-right:0.5em;">
+      <li style="display: inline-block; "><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">About Us</a></li>
+      <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Rovers</a></li>
+      <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Sponsers</a></li>
+      <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Achievments</a></li>
+      <li style="display: inline-block;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Contact Us</a></li>
+    </ul>
+    <ul type="none" class="nav" style="margin: 1vw;padding-right:0.5em;" onclick="nav_open()">
+      <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="img/nav_logo.png" width="40vw" height="40vw"></a></li>
+    </ul>
+  </div>
+  <div class="check">
+    <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; text-align: right;">
+      <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;">About Us</a></li>
+      <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;">Our Rovers</a></li>
+      <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;">Our Sponsers</a></li>
+      <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;">Achievments</a></li>
+      <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+<img src="img/hero.png" width="100%" height="90%">
+<div>
+  <h1 style="text-align: center;color: rgb(19 117 165); font-size: 3.5vw; font-family: 'Montserrat', Georgia, Serif; margin-bottom: 0em;"><b>About Us</b></h1>
+  <h1 style="text-align: center;color: white; font-size: 1.75vw; font-family: 'Amatic SC'; margin-top: 0em;"><b>We Work Hard In Silence, Our Robots Makes Noises</b></h1>
+</div>
+<div style="display: flex;">
+  <p style="padding-left: 7.5vw; margin-top: 2vw;font-family: 'Montserrat', Georgia, Serif; font-size: 1.25vw;">ARES Robotics is a team of students highly interested in 
+  Robotics and Artificial Intelligence motivated towards 
+  research and development in various fields of robotics. It is a 
+  multidisciplinary collaboration of undergraduate space 
+  aficionados of about 30 motivated students from the Netaji 
+  Subhas Institute of Technology, working tirelessly to 
+  formulate, design and fabricate a rover that can be put to use 
+  in early exploration of Mars. Robotics, being a 
+  multidisciplinary field requires knowledge of wide variety of 
+  subjects ranging from mechanical, electronics and 
+  embedded systems, control systems, computer vision and 
+  machine learning. Recently we were among the list of 
+  qualified teams for European Rover Challenge (ERC) with 
+  only 50 other teams selected and shortlisted globally.
+  Know more about .
+  </p>
+  <img src="img/team.png" width="35%" height="35%" style="padding-left: 9vw;padding-right: 3vw; margin-top: 2.75vw;">
+</div>
+<div style="text-align: center; margin-top: 2vw;">
+  <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+  <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+  <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+  <br>
+  <div style="border-radius: 2em; border-width: 1em; background-color: blue; width: 15vw; text-align: center; align-self: center;margin-left: 45%;font-family: 'Amatic SC';font-size: 2vw; padding: 0.25vw;">VIEW GALLERY</div>
+</div>
+<div style="width: 100%; background-color: white;">
+  <h1 style="text-align: center; color: rgb(19 117 165);font-family: 'Montserrat', Georgia, Serif;font-size: 3.5vw;">Our Sponsors</h1>
+  <div style="text-align: center; margin-top: 2vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+    <img src="img/team.png" width="25%" height="25%" style="padding: 1vw;">
+  </div>
+  <p style="color: rgb(19 117 165); font-family: 'Amatic SC'; text-align: center; font-size: 1.5vw;">AND MANY MORE...</p>
+  <p style="color: rgb(19 117 165); font-family: 'Amatic SC'; text-align: center; font-size: 3vw; margin-top: 0em;">Want to be Our Sponsor ?</p>
+  <p style="color: black; padding-right: 2vw;padding-left: 2vw;font-size: 1.5vw;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br><br>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br>
+
+  </p>
+</div>
+<div >
+  <h1 style="text-align: center; color: rgb(19 117 165);;font-family: 'Montserrat', Georgia, Serif;font-size: 3.5vw; margin-top: 0em;">Achievements</h1>
+  <p style="padding: 5vw;padding-top: 0em; font-size: 1.5vw;">
+    we are proud to tell you ."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  </p>
+<div style="display: flex;">
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+</div>
+<div style="display: flex;">
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+</div>
+<p style="color: white; font-family: 'Amatic SC'; text-align: center; font-size: 3vw; margin-top: 0em;">Know More about our Achievements and future goals</p>
+</div>
+<div style="background-color: white;">
+  <h1 style="text-align: center; color: rgb(19 117 165);font-family: 'Montserrat', Georgia, Serif;font-size: 3.5vw;margin-bottom: 0em;">Our Team</h1><br>
+<div class="mySlides fade">
+      <p style="color: rgb(19 117 165); font-family: 'Amatic SC'; text-align: center; font-size: 3vw; margin-top: 0em;margin-bottom: 0em; ">Department 1</p>
+      <p style="padding: 2vw; color: black;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+      <div style="display: flex;">
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+      </div>
+      <div style="display: flex;">
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+      </div>
+</div>
+<div class="mySlides fade">
+      <p style="color: rgb(19 117 165); font-family: 'Amatic SC'; text-align: center; font-size: 3vw; margin-top: 0em;margin-bottom: 0em; ">Department 2</p>
+      <p style="padding: 2vw; color: black;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+      <div style="display: flex;">
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+      </div>
+      <div style="display: flex;">
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+  <article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center" style="background-color: white;  margin-left: auto;margin-right: auto;">
+    <img src="http://placekitten.com/g/600/300" class="db w-100 br2 br--top" alt="Photo of a kitten looking menacing.">
+    <div class="pa2 ph3-ns pb3-ns">
+      <div class="dt w-100 mt1">
+        <div class="dtc">
+          <h1 class="f5 f4-ns mv0">Cat</h1>
+        </div>
+        <div class="dtc tr">
+          <h2 class="f5 mv0">$1,000</h2>
+        </div>
+      </div>
+      <p class="f6 lh-copy measure mt2 mid-gray">
+        If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+        and touch water with paw then recoil in horror.
+      </p>
+    </div>
+  </article>
+      </div>
+</div>
+</div>
+<script type="text/javascript">
+  var t=0;
+  function nav_open () {
+    var x = window.matchMedia("(max-width: 1065px)")
+    var navi = document.getElementsByClassName("linking");
+    var navi1 = document.getElementsByClassName("close");
+    var navi2 = document.getElementsByClassName("check");
+    if (t%2==0) {
+    navi[0].style.display="block"
+    navi1[0].src="img/close.png";
+    t++;
+  }
+  else{
+    navi[0].style.display="none"
+    navi1[0].src="img/nav_logo.png";
+    t++;
+  }
+  }
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
