@@ -139,16 +139,11 @@ article{
     border-color: transparent;*/
 }
 .imaging:hover + .centered {
-/*border-color:rgb(19 117 165); 
-border-style: solid;
-border-width: 1em;
-opacity: 25%;
-transition-duration: 2s;*/
 display: block;
 }
 
 .imag{
-    border-width: 1em; 
+    border-width: 1vw; 
     border-style: solid; 
     border-color: transparent;
 }
@@ -156,7 +151,7 @@ display: block;
 .imag:hover{
 border-color:rgb(19 117 165); 
 border-style: solid;
-border-width: 1em;
+border-width: 1vw;
 opacity: 25%;
 transition-duration: 2s;
 }
@@ -164,9 +159,36 @@ transition-duration: 2s;
 .centered {
   position: absolute;
   top: 50%;
-  left: 60%;
+  left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+}
+
+.achieve{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.team1{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 22vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+.team2{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-bottom: 2vw;
+}
+
+.centered:hover{
+    display: block;
 }
 
 .click{
