@@ -132,3 +132,51 @@ article{
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.imaging{/*
+    border-width: 1em; 
+    border-style: solid; 
+    border-color: transparent;*/
+}
+.imaging:hover + .centered {
+/*border-color:rgb(19 117 165); 
+border-style: solid;
+border-width: 1em;
+opacity: 25%;
+transition-duration: 2s;*/
+display: block;
+}
+
+.imag{
+    border-width: 1em; 
+    border-style: solid; 
+    border-color: transparent;
+}
+
+.imag:hover{
+border-color:rgb(19 117 165); 
+border-style: solid;
+border-width: 1em;
+opacity: 25%;
+transition-duration: 2s;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.click{
+    animation: disco 2s infinite;
+}
+
+@keyframes disco{
+    0%{color: red;}
+    25%{color: blue;}
+    50%{color: green;}
+    75%{color: orange;}
+    100%{color: red;}
+}
