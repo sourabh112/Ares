@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- <link href='tach.css' rel='stylesheet'>
+ --><link href='style.css' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div style="position: fixed; width: 100%;">
+<div style="display: flex; background-color: black; width: 100%;">
+<ul type="none" style="text-align:left;padding:0px;margin: 0em; width: 100%;">
+  <li style="display: inline-block;padding:0px;padding-left:0.5vw; "><img src="img/ARES_LOGO - Copy.png" width="60vw" height="60vw"></li>
+</ul>
+  <ul type="none" class="links" style="margin-top: 1vw;padding-right:0.5em; text-align: right; width: 100%; margin-bottom: 0.1vw;">
+  <li style="display: inline-block;  padding: 5px; "><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">About Us</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Rovers</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Our Sponsers</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Achievments</a></li>
+  <li style="display: inline-block;  padding: 5px;"><a href="#" style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;">Contact Us</a></li>
+</ul>
+ <ul type="none" class="nav" style="margin: 1vw;padding-right:0.5em;" onclick="nav_open()">
+  <li style="display: inline-block; "><a  style="color: white; text-decoration: none; font-size: 1.3vw; padding-left: 0.75vw;"><img class="close" src="img/nav_logo.png" width="40vw" height="40vw"></a></li>
+</ul>
+</div>
+<div class="check">
+  <ul type="none" class="linking" style="margin: 0em; padding-left: 0em; display: none; align-self: flex-end; background-color: rgb(0,0,0,0.5); text-align: right; width: 100%;">
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">About Us</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Rovers</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Our Sponsers</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Achievments</a></li>
+  <li><a href="#" style="display: block; color: black; text-decoration: none; font-size: 2.5vw; padding-bottom: 0.75vw;  color: white;">Contact Us</a></li>
+  </ul>
+</div>
+</div>
+<div>
+	<h1 style="color: white; font-size: 10vw; padding: 15vw; text-align: center; margin: 0em;">Rover 2018</h1>
+</div>
+<div style="background: white; color: black; padding-top: 5vw;">
+	<div class="main">
+	<div class=" lap">
+		<ul class="sidepanel">
+			<li class="sidelist"><img src="img/img1.jpg" class="sideimage" onclick="main('image1')"></li>
+			<li class="sidelist"><img src="img/img2.jpg" class="sideimage" onclick="main('image2')"></li>
+			<li class="sidelist"><img src="img/img3.jpg" class="sideimage" onclick="main('image3')"></li>
+			<li class="sidelist"><img src="img/img4.jpg" class="sideimage" onclick="main('image4')"></li>
+			<li class="sidelist"><img src="img/img5.jpg" class="sideimage" onclick="main('image5')"></li>
+		</ul>
+	</div>
+	<div class=" lap">
+		<img src="img/img1.jpg" class="mainimage image1" style="display: block;">
+		<img src="img/img2.jpg" class="mainimage image2" style="display: none;">
+		<img src="img/img3.jpg" class="mainimage image3" style="display: none;">
+		<img src="img/img4.jpg" class="mainimage image4" style="display: none;">
+		<img src="img/img5.jpg" class="mainimage image5" style="display: none;">
+	</div>
+	<div class="mob">
+		<img src="img/img1.jpg" class="mainimage image.1" style="display: block;">
+		<img src="img/img2.jpg" class="mainimage image.2" style="display: none;">
+		<img src="img/img3.jpg" class="mainimage image.3" style="display: none;">
+		<img src="img/img4.jpg" class="mainimage image.4" style="display: none;">
+		<img src="img/img5.jpg" class="mainimage image.5" style="display: none;">
+	</div>
+	<div class="mob">
+		<ul class="sidepanel">
+			<li class="sidelist"><img src="img/img1.jpg" class="sideimage" onclick="main('image.1')"></li>
+			<li class="sidelist"><img src="img/img2.jpg" class="sideimage" onclick="main('image.2')"></li>
+			<li class="sidelist"><img src="img/img3.jpg" class="sideimage" onclick="main('image.3')"></li>
+			<li class="sidelist"><img src="img/img4.jpg" class="sideimage" onclick="main('image.4')"></li>
+			<li class="sidelist"><img src="img/img5.jpg" class="sideimage" onclick="main('image.5')"></li>
+		</ul>
+	</div>
+	<div class="dis">
+		<h1 class="description">OVERVIEW</h1>
+		<p class="description1">
+			Frankenstein (Kor. 프랑켄슈타인) is the deuteragonist of the series. He is Raizel's devoted servant and has loyally served him for over 820 years. He is a brilliant scientist, whose abandoned research notes helped to bring the Union's scientific knowledge and technology to the advanced level it has reached in the series. Frankenstein is also the founder and current principal of Ye Ran High School, where he is known to all as the Principal. He is now the latest addition to the RK-5 bearing the title of “Number 0”.
+		</p>
+		<h1 class="description">Appearence</h1>
+		<p class="description1">
+			Frankenstein, like his Master Raizel, is very handsome and elegant. He is tall and has shoulder-length silky blond hair, with bright blue eyes and a cheerful smile. When he becomes overly boisterous, his aura changes and he sports a sadistic grin with an equally sadistic personality to match. He is regularly dressed in formal attire but has been seen to switch to a more casual style when at home. He wears glasses when performing his duties as Chairman of the school and has also been seen wearing monocles during flashbacks of him carrying out his research work hundreds of years ago.
+		</p>
+	</div>
+</div>
+<div style="padding-bottom: 2vw;">
+	<ul class="product">
+		<li class="but clk1" onclick="info('info1','clk1')" style="box-shadow: none;">Descreption</li>
+		<li class="but clk2" onclick="info('info2','clk2')">Specifications</li>
+		<li class="but clk3" onclick="info('info3','clk3')">Achievements</li>
+	</ul>
+	<p style="display: block;" class="box info1">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+	<p style="display: none;" class="box info2">
+		It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+	</p>
+	<p style="display: none;" class="box info3">
+		Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+	</p>
+</div>
+</div>
+<h1 style="text-align: center; font-size: 4vw;">MEET OUR TEAM</h1>
+<div style="color: white;">
+	<div class="Team">
+	<!-- info of member1 -->
+	<div class="Teammember container member1" onmouseover="mem1('member1')" onmouseleave ="mem1out('member1')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 1</p>	
+	</div>
+	<div class="Teammember container member1" onmouseenter="mem1('member1')" onmouseleave ="mem1out('member1')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member1" onmouseenter="mem2('member1')" onmouseleave ="mem1out('member1')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member 2 -->
+	<div class="Teammember container member2" onmouseover="mem1('member2')" onmouseleave ="mem1out('member2')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 2</p>	
+	</div>
+	<div class="Teammember container member2" onmouseenter="mem1('member2')" onmouseleave ="mem1out('member2')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member2" onmouseenter="mem2('member2')" onmouseleave ="mem1out('member2')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member3 -->
+	<div class="Teammember container member3" onmouseover="mem1('member3')" onmouseleave ="mem1out('member3')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 3</p>	
+	</div>
+	<div class="Teammember container member3" onmouseenter="mem1('member3')" onmouseleave ="mem1out('member3')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member3" onmouseenter="mem2('member3')" onmouseleave ="mem1out('member3')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member4 -->
+	<div class="Teammember container member4" onmouseover="mem1('member4')" onmouseleave ="mem1out('member4')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 4</p>	
+	</div>
+	<div class="Teammember container member4" onmouseenter="mem1('member4')" onmouseleave ="mem1out('member4')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member4" onmouseenter="mem2('member4')" onmouseleave ="mem1out('member4')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member5 -->
+	<div class="Teammember container member5" onmouseover="mem1('member5')" onmouseleave ="mem1out('member5')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 5</p>	
+	</div>
+	<div class="Teammember container member5" onmouseenter="mem1('member5')" onmouseleave ="mem1out('member5')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member5" onmouseenter="mem2('member5')" onmouseleave ="mem1out('member5')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member6 -->
+	<div class="Teammember container member6" onmouseover="mem1('member6')" onmouseleave ="mem1out('member6')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 6</p>	
+	</div>
+	<div class="Teammember container member6" onmouseenter="mem1('member6')" onmouseleave ="mem1out('member6')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member6" onmouseenter="mem2('member6')" onmouseleave ="mem1out('member6')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member7 -->
+	<div class="Teammember container member7" onmouseover="mem1('member7')" onmouseleave ="mem1out('member7')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 7</p>	
+	</div>
+	<div class="Teammember container member7" onmouseenter="mem1('member7')" onmouseleave ="mem1out('member7')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member7" onmouseenter="mem2('member7')" onmouseleave ="mem1out('member7')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member8 -->
+	<div class="Teammember container member8" onmouseover="mem1('member8')" onmouseleave ="mem1out('member8')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 8</p>	
+	</div>
+	<div class="Teammember container member8" onmouseenter="mem1('member8')" onmouseleave ="mem1out('member8')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member8" onmouseenter="mem2('member8')" onmouseleave ="mem1out('member8')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+	<!-- info of member9 -->
+	<div class="Teammember container member9" onmouseover="mem1('member9')" onmouseleave ="mem1out('member9')">
+		<img src="img/member.jpg" class="Teamimage">
+		<p style="background-color:white; color: black;" class="bottom" >Member 9</p>	
+	</div>
+	<div class="Teammember container member9" onmouseenter="mem1('member9')" onmouseleave ="mem1out('member9')" style="display: none;">
+		<p style="font-size: 1vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>	
+	</div>
+	<div class="Teammember container member9" onmouseenter="mem2('member9')" onmouseleave ="mem1out('member9')" style="display: none;">
+		<p style="font-size: 1vw;" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+		</p>	
+	</div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+  var t=0;
+  function nav_open () {
+    var x = window.matchMedia("(max-width: 1065px)")
+    var navi = document.getElementsByClassName("linking");
+    var navi1 = document.getElementsByClassName("close");
+    var navi2 = document.getElementsByClassName("check");
+    if (t%2==0) {
+    navi[0].style.display="block"
+    navi1[0].src="img/close.png";
+    t++;
+  }
+  else{
+    navi[0].style.display="none"
+    navi1[0].src="img/nav_logo.png";
+    t++;
+  }
+  }
+  function main(classname) {
+		var x = document.getElementsByClassName(classname)
+		var y = document.getElementsByClassName("mainimage")
+
+		for (var i = 0; i < y.length; i++) {
+			y[i].style.display="none";
+		}
+
+		x[0].style.display="block";
+	}
+	function info(classname,a) {
+		var x = document.getElementsByClassName(classname);
+		var y = document.getElementsByClassName("box");
+		var b = document.getElementsByClassName("but");
+		var z = document.getElementsByClassName(a);
+
+		for (var i = 0; i < y.length; i++) {
+			y[i].style.display="none";
+			b[i].style.boxShadow="0.4vw 0.8vw #888888";
+		}
+
+		x[0].style.display="block";
+		z[0].style.boxShadow="none";
+	}
+	var y;
+	function mem1(className) {
+  		var x = document.getElementsByClassName(className);
+    	x[1].style.display = "block";
+    	x[1].style.borderColor = "rgb(0,128,128)"
+    	x[0].style.display = "none";
+   		x[2].style.display = "none";
+
+    	y = setTimeout(mem2, 2000,className);
+		}
+	function mem1out(className) {
+  		var x = document.getElementsByClassName(className);
+    	x[0].style.display = "block";
+  		x[1].style.display = "none"
+    	x[2].style.display = "none";
+    	clearTimeout(y);		
+		}
+	function mem2(className) {
+  		var x = document.getElementsByClassName(className);
+    	x[1].style.display = "none";
+    	x[0].style.display = "none";
+   		x[2].style.display = "block";
+   		x[2].style.borderColor = "rgb(0,128,128)"
+    	y = setTimeout(mem1, 2000,className);
+		}
+</script>
+</html>
