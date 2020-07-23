@@ -19,7 +19,7 @@
         var gitHub = sheetData.filter(cellObj => cellObj.gs$cell.col=== "13");
         var profile = sheetData.filter(cellObj => cellObj.gs$cell.col=== "14");
         for (var i = 0; i < name.length; i++) {
-          var y =i.toString(10);
+        	var y =i.toString(10);
             structured_data.push({id:y,name: name[i].content.$t,department: department[i].content.$t,graduation_Year: graduation_Year[i].content.$t,competitions: competitions[i].content.$t,join:join[i].content.$t,branch: branch[i].content.$t});
             if (poR[i]!=null) {
               structured_data[i].poR = poR[i].content.$t;
@@ -66,16 +66,16 @@
         }
 
         for (var i = 0; i < structured_data.length; i++) {
-          structured_data[i].profile = structured_data[i].profile.replace("open?", "uc?");
-          structured_data[i].poR = structured_data[i].poR.replace("null", "member");
+        	structured_data[i].profile = structured_data[i].profile.replace("open?", "uc?");
+        	structured_data[i].poR = structured_data[i].poR.replace("null", "member");
         }
 
         for (var i = 0 ; i < structured_data.length; i++) {
-          if (structured_data[i].competitions == "URC 2018 and ERC 2018" || structured_data[i].competitions == "URC 2018 and ERC 2018, URC 2019 and ERC 2019") {
+          if (structured_data[i].competitions == "URC 2019 and ERC 2019, IRC 2020" || structured_data[i].competitions == "URC 2018 and ERC 2018, URC 2019 and ERC 2019") {
         	var x = document.createElement("div");
         	x.classList.add("Teammemberover");
-          x.innerHTML = " <div class=\"Teammember container member"+structured_data[i].id+"\" onmouseover=\"mem1('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\">   <img src=\""+structured_data[i].profile+"\" class=\"Teamimage\">    <p style=\"background-color:white; color: black;\" class=\"bottom\" >"+structured_data[i].name+"</p>    </div>  <div class=\"Teammember container1 member"+structured_data[i].id+"\" onmouseenter=\"mem1('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\" style=\"display: none;\">    <p class=\"memdeshead\" style=\" text-align:center;\" ><b>"+structured_data[i].name+"</b><br></p> <p class=\"memdestext\" style=\"\''><br> <b style=\"text-align:left;\">Linkedin ID :</b><a href="+structured_data[i].Linkedin+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Facebook ID :</b><a href="+structured_data[i].facebook+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Git-Hub ID :</b><a href="+structured_data[i].gitHub+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Twitter ID :</b><a href="+structured_data[i].twitter+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Portfolio Website :</b><a href="+structured_data[i].portfolio+"> "+structured_data[i].name+"</a></p>    </div>  <div class=\"Teammember container1 member"+structured_data[i].id+"\" onmouseenter=\"mem2('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\" style=\"display: none;\">  <p class=\"memdeshead\" style=\" text-align:center;\" ><b>"+structured_data[i].name+"</b><br> <p class=\"memdestext\" style=\"line-height: 1;\" >Hi, I'm "+structured_data[i].name+" from "+structured_data[i].branch+" of graduating year "+structured_data[i].graduation_Year+". I have been member of Ares from "+structured_data[i].join+" and worked with team to make Rover 2018. It's my pleasure that I working in "+structured_data[i].department+" department of Ares. I worked as "+structured_data[i].poR+" in Ares team and will love to work with my team till my graduating year.<p>   </div>";
-          var element = document.getElementsByClassName("Team");
+        	x.innerHTML = "	<div class=\"Teammember container member"+structured_data[i].id+"\" onmouseover=\"mem1('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\">		<img src=\""+structured_data[i].profile+"\" class=\"Teamimage\">		<p style=\"background-color:white; color: black;\" class=\"bottom\" >"+structured_data[i].name+"</p>		</div>	<div class=\"Teammember container1 member"+structured_data[i].id+"\" onmouseenter=\"mem1('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\" style=\"display: none;\">		<p class=\"memdeshead\" style=\" text-align:center;\" ><b>"+structured_data[i].name+"</b><br></p> <p class=\"memdestext\" style=\"\''><br> <b style=\"text-align:left;\">Linkedin ID :</b><a href="+structured_data[i].Linkedin+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Facebook ID :</b><a href="+structured_data[i].facebook+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Git-Hub ID :</b><a href="+structured_data[i].gitHub+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Twitter ID :</b><a href="+structured_data[i].twitter+"> "+structured_data[i].name+"</a><br><b style=\"text-align:left;\">Portfolio Website :</b><a href="+structured_data[i].portfolio+"> "+structured_data[i].name+"</a></p>		</div>	<div class=\"Teammember container1 member"+structured_data[i].id+"\" onmouseenter=\"mem2('member"+structured_data[i].id+"')\" onmouseleave =\"mem1out('member"+structured_data[i].id+"')\" style=\"display: none;\">	<p class=\"memdeshead\" style=\" text-align:center;\" ><b>"+structured_data[i].name+"</b><br>	<p class=\"memdestext\" style=\"line-height: 1;\" >Hi, I'm "+structured_data[i].name+" from "+structured_data[i].branch+" of graduating year "+structured_data[i].graduation_Year+". I have been member of Ares from "+structured_data[i].join+" and worked with team to make Atom I. It's my pleasure that I working in "+structured_data[i].department+" department of Ares. I worked as "+structured_data[i].poR+" in Ares team and will love to work with my team till my graduating year.<p>		</div>";
+        	var element = document.getElementsByClassName("Team");
 			element[0].appendChild(x);
         }
         }
@@ -125,7 +125,7 @@
 </div>
 </div>
 <div>
-	<h1 style="color: white; font-size: 10vw; padding: 15vw; text-align: center; margin: 0em;">Rover 2018</h1>
+	<h1 style="color: white; font-size: 10vw; padding: 15vw; text-align: center; margin: 0em;">ATOM I</h1>
 </div>
 <div style="background: white; color: black; padding-top: 5vw;">
 	<div class="main">

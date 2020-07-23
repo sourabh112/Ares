@@ -101,3 +101,41 @@ h1, h2, h3, h4, h5, h6 {
 position: relative;
 transition: 2s;
 }
+
+.homedesp{
+  display: flex;
+}
+
+.hometextmob{
+  display: none;
+}
+
+.homeimgdesp{ 
+  margin-top: 2.75vw;
+  padding-left: 4vw;
+  padding-right: 7.5vw;
+}
+
+@media only screen and (max-width: 800px) {
+
+.hero{
+  padding-top: 15vw;
+}
+.homedesp{
+  display: block;
+}
+
+.hometextlap{
+  display: none;
+}
+
+.hometextmob{
+  display: block;
+  padding-right: 7.5vw;
+}
+
+.homeimgdesp{
+  margin-left: 27.5%;
+  padding: 0em;
+}
+}
