@@ -1,4 +1,4 @@
-.imaging:hover + .centered {
+.container:hover .imaging + .centered {
 display: block;
 }
 
@@ -8,7 +8,7 @@ display: block;
     border-color: transparent;
 }
 
-.imag:hover{
+.container:hover .imag{
 border-color:rgb(19 117 165); 
 border-style: solid;
 border-width: 1vw;
